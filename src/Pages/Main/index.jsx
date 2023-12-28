@@ -1,12 +1,9 @@
 import React from "react";
 import "./home.scss";
-import TopBar from "../../Component/Layout/TopBar";
 import { CEo, ISTA, SubHero, Welcome } from "../../assets";
-import { ReactSVG } from "react-svg";
 import InstituteContainer from "../../Component/institute/instituteContainer";
 import { WebsiteData } from "./constant";
 import { Input, Row } from "antd";
-import Footer from "../../Component/Layout/Footer";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -14,7 +11,6 @@ const Home = () => {
 
   return (
     <div className="main">
-      <TopBar activeClass="activehome" button="Join" />
       <div className="home">
         <div className="sub-home">
           <img src={SubHero} />
@@ -31,32 +27,32 @@ const Home = () => {
             className="instituteButton"
             onClick={() => navigate("/insitute")}
           >
-            iSTA Institute
+            isttaa Institute
           </button>
           <button
             className="solutionButton"
             onClick={() => navigate("/solutions")}
           >
-            iSTA Solutions
+            isttaa Solutions
           </button>
           <button className="shopButton" onClick={() => navigate("/it-shop")}>
-            iSTA IT Shop
+            isttaa IT Shop
           </button>
         </div>
       </div>
-      <div className="welcomeIsta">
+      <div className="welcomeisttaa">
         <div className="welcome">
           <div className="welcome-left">
             <p className="welcome-text">Welcome To</p>
             <img src={ISTA} />
             <p className="description">
-              iSTA is a global company that offers a wide range of services
+              isttaa is a global company that offers a wide range of services
               across various industries. From technology solutions to
-              consulting, finance, marketing, and logistics, iSTA aims to
+              consulting, finance, marketing, and logistics, isttaa aims to
               simplify complex challenges and deliver reliable, tailored
               services to clients worldwide. With expertise in cutting-edge
               technologies, strategic consulting, financial planning, marketing,
-              and logistics management, iSTA strives to be a trusted partner in
+              and logistics management, isttaa strives to be a trusted partner in
               driving growth and success for businesses of all sizes.
             </p>
           </div>
@@ -70,12 +66,12 @@ const Home = () => {
         <InstituteContainer item={item} />
       ))}
 
-      {/* Start Buisness With iSTA */}
+      {/* Start Buisness With isttaa */}
 
       <div className="start-buisness">
         <div className="start">
-          <h2>Start Business With iSTA</h2>
-          <p>Build Your Dreams With iSTA</p>
+          <h2>Start Business With isttaa</h2>
+          <p>Build Your Dreams With isttaa</p>
           <button onClick={() => navigate("/start-business")}>
             Start Business
           </button>
@@ -92,12 +88,12 @@ const Home = () => {
             <p className="welcome-text">Founder & CEO</p>
             <h2>Tayyab Imtiaz</h2>
             <p className="welcome-des">
-              As the Founder & CEO of iSTA, I am thrilled to lead a company that
+              As the Founder & CEO of isttaa, I am thrilled to lead a company that
               offers comprehensive IT Training, cutting-edge Software House
               solutions, and an IT Shop, catering to all your technology needs.
               Our commitment to excellence drives us to stay ahead in the
               ever-evolving tech world, delivering personalized services to
-              empower individuals and businesses alike. At iSTA, innovation is
+              empower individuals and businesses alike. At isttaa, innovation is
               our fuel, and customer satisfaction is our goal. With gratitude to
               our clients and dedication from our team, we look forward to
               shaping a brighter future together. Thank be a part of our
@@ -108,12 +104,12 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Meet Our iSTA Team */}
+      {/* Meet Our isttaa Team */}
 
       <div className="meet">
         <div className="meet-team">
           <div className="meet-box">
-            <p className="meet-our">Meet Our iSTA Team</p>
+            <p className="meet-our">Meet Our isttaa Team</p>
             <p className="meet-explor">Explore</p>
           </div>
         </div>
@@ -142,8 +138,7 @@ const Home = () => {
 
       {/* Footer */}
 
-      <Footer />
-    </div>
+     </div>
   );
 };
 

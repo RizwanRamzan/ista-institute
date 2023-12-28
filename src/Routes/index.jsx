@@ -24,12 +24,7 @@ import Adobe_Illustrator from "../Pages/Adobe_Illustrator";
 import Adobe_Photoshop from "../Pages/Adobe_Photoshop";
 import Diploma_Graphics_Design from "../Pages/diploma_graphics_design";
 import Diploma_Computer_Science from "../Pages/diploma_computer_science";
-import IstaSolutions from "../Pages/ista_solutions";
-import Graphics_Design from "../Component/ista-solutions-com/graphics_design";
-import IT_Shop from "../Pages/IT_shop";
-import Laptop from "../Component/IT_Shop_com/laptop";
-import Ista_Packages from "../Component/ista-solutions-com/ista_solution_packages";
-import Solution_Freelancer from "../Component/ista-solutions-com/solution_freelancer";
+import Courses from "../Pages/Courses/courses";
 
 const ApplicationRoutes = () => {
   function RequireAuth({ children }) {
@@ -55,6 +50,16 @@ const ApplicationRoutes = () => {
           </div>
         }
       />
+
+      {/* Courses and Diploma */}
+      <Route
+        path="/all-courses"
+        element={
+          <div className="layout">
+            <Courses />
+          </div>
+        }
+      />
       <Route
         path="/contact"
         element={
@@ -64,7 +69,7 @@ const ApplicationRoutes = () => {
         }
       />
       <Route
-        path="/joinig"
+        path="/apply-now"
         element={
           <div className="layout">
             <JoiningForm />
@@ -215,54 +220,7 @@ const ApplicationRoutes = () => {
           </div>
         }
       />
-      <Route
-        path="/solutions"
-        element={
-          <div className="layout mylayout">
-            <IstaSolutions />
-          </div>
-        }
-      />
-      <Route
-        path="/graphics-design"
-        element={
-          <div className="layout mylayout">
-            <Graphics_Design />
-          </div>
-        }
-      />
-      <Route
-        path="/it-shop"
-        element={
-          <div className="layout mylayout">
-            <IT_Shop />
-          </div>
-        }
-      />
-      <Route
-        path="/laptop"
-        element={
-          <div className="layout mylayout">
-            <Laptop />
-          </div>
-        }
-      />
-      <Route
-        path="/packages"
-        element={
-          <div className="layout mylayout">
-            <Ista_Packages />
-          </div>
-        }
-      />
-      <Route
-        path="/solution-freelancer"
-        element={
-          <div className="layout mylayout">
-            <Solution_Freelancer />
-          </div>
-        }
-      />
+
     </Routes>
   );
 };

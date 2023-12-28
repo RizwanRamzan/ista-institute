@@ -60,6 +60,7 @@ export const DoubleCards = [
     img: art_design4,
     leftBtn: "Details",
     rightBtn: "Enroll Now",
+    path:"/full-stack-designing"
   },
   {
     title: "Graphics & Designing",
@@ -67,6 +68,7 @@ export const DoubleCards = [
     img: art_design5,
     leftBtn: "Details",
     rightBtn: "Enroll Now",
+    path:"/graphics-designing"
   },
   {
     title: "Full Stack Graphic Designing",
@@ -74,6 +76,7 @@ export const DoubleCards = [
     img: art_design6,
     leftBtn: "Details",
     rightBtn: "Enroll Now",
+    path:"/graphics-designing-04"
   },
   {
     title: "Full Stack Graphic Designing",

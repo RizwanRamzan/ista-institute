@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import ApplicationRoutes from './Routes'
+import Layout from './Component/Layout/layout'
 
 function App() {
 
   return (
     <>
-      <ApplicationRoutes />
+      <Layout><ApplicationRoutes /></Layout>
     </>
   )
 }

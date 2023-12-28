@@ -1,9 +1,7 @@
 import React from 'react'
-import TopBar from '../../Component/Layout/TopBar'
 import './contact.scss'
-import { Button, Card, Col, Form, Input, Row } from 'antd'
+import {  Card, Col, Form, Input, Row } from 'antd'
 import { Gmail, whatsapp } from '../../assets'
-import Footer from '../../Component/Layout/Footer'
 
 const Contact = () => {
 
@@ -11,7 +9,6 @@ const Contact = () => {
 
     return (
         <div className='contact-main'>
-            <TopBar button="Join" activeClass="activehome" />
             <div className='contact'>
                 <p>Contact</p>
             </div>
@@ -30,7 +27,7 @@ const Contact = () => {
                         <Col span={12}>
                             <Card className='contact-boxs'>
                                 <img src={Gmail} />
-                                <p>ista478822@gmail.coms</p>
+                                <p>isttaainstitute@gmail.com</p>
                             </Card>
                         </Col>
                     </Row>
@@ -75,7 +72,7 @@ const Contact = () => {
             </div>
 
 
-            {/* Meet Our iSTA Team */}
+            {/* Meet Our isttaa Team */}
 
             <div className='meet'>
                 <div className='meet-team' >
@@ -86,7 +83,6 @@ const Contact = () => {
                 </div>
             </div>
 
-            <Footer />
 
         </div>
     )

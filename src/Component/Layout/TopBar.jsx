@@ -6,7 +6,7 @@ import "./TopBar.scss";
 import { useNavigate } from "react-router-dom";
 import Link from "antd/es/typography/Link";
 
-const TopBar = ({ button, activeClass, tabsColor }) => {
+const TopBar = ({ activeClass }) => {
   const [activeTabs, setActiveTabs] = useState("");
 
   const navigate = useNavigate();
@@ -30,15 +30,15 @@ const TopBar = ({ button, activeClass, tabsColor }) => {
     <div className="headerMain">
       <div className="header">
         <div className="left-side">
-          <img src={Ista_Logo} />
-          <Input
+          <img onClick={()=>navigate('/home')} src={Ista_Logo} />
+          {/* <Input
             className="ant-input-affix-wrapper"
-            placeholder="Search iSTA..."
+            placeholder="Search isttaa..."
             suffix={<img src={SearchIcon} />}
-          />
+          /> */}
           {/* <Input
             addonBefore={selectBefore}
-            defaultValue="Search iSTA..."
+            defaultValue="Search isttaa..."
             className="ant-input-affix-wrapper"
             suffix={<img src={SearchIcon} />}
           /> */}
@@ -65,10 +65,10 @@ const TopBar = ({ button, activeClass, tabsColor }) => {
             </p>
           </div>
           <button
-            onClick={() => navigate("/joinig")}
-            className={button == "Apply now" && "loginButton"}
+            onClick={() => navigate("/apply-now")}
+            className="loginButton"
           >
-            {button}
+            Apply
           </button>
         </div>
       </div>

@@ -1,9 +1,7 @@
 import React from "react";
 import Wrapper from "../../common/Wrapper";
-import Art_and_design_Top from "../../common/Wrapper/art_design_top";
 import "./full_stack_designing.scss";
 import { Content } from "./constant";
-import Footer from "../../Component/footer";
 
 const Full_stack_designing = () => {
   return (
@@ -26,7 +24,7 @@ const Full_stack_designing = () => {
             </div>
             <hr />
             <p>
-              "At iSTA Institute, we offer a dynamic Full Stack Graphic
+              "At isttaa Institute, we offer a dynamic Full Stack Graphic
               Designing Course that covers essential design principles,
               industry-standard software proficiency, UI/UX expertise, and
               portfolio development. Our program prepares students for a wide
@@ -68,7 +66,6 @@ const Full_stack_designing = () => {
         </div>
       </div>
 
-      <Footer />
     </>
   );
 };

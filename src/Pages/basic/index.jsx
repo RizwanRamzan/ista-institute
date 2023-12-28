@@ -39,8 +39,6 @@ const Basic = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

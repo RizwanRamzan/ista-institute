@@ -36,9 +36,11 @@ const Footer = () => {
             <Col span={12}>
               <div className="social-icons-list">
                 {SocialIcon.map((item, index) => (
-                  <div key={index} className="socila-icon">
-                    <img src={item?.image} />
-                  </div>
+                  <a href={item?.link} target="_blank">
+                    <div key={index} className="socila-icon">
+                      <img src={item?.image} />
+                    </div>
+                  </a>
                 ))}
               </div>
             </Col>
@@ -46,7 +48,7 @@ const Footer = () => {
           <Row className="footer-end">
             <Col span={24}>
               <p style={{ textAlign: "center" }}>
-                © {GetCurrentYear} iSTA. All rights reserved.
+                © {GetCurrentYear} isttaa. All rights reserved.
               </p>
             </Col>
           </Row>

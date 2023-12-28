@@ -10,9 +10,8 @@ const StartBuisness = () => {
 
     return (
         <div className='contact-main'>
-            <TopBar button="Join" activeClass="activehome" />
             <div className='contact'>
-                <p>Start Business With iSTA</p>
+                <p>Start Business With isttaa</p>
             </div>
 
             <div className='contact-form'>
@@ -20,7 +19,7 @@ const StartBuisness = () => {
                     <Form layout='vertical' style={{ width: "100%" }}>
                         <Row gutter={40}>
                             <Col span={24}>
-                                <p>Build Your Dream With iSTA</p>
+                                <p>Build Your Dream With isttaa</p>
                             </Col>
                             <Col span={24}>
 
@@ -71,12 +70,6 @@ const StartBuisness = () => {
                         </div>
                     </Form>
                 </div>
-            </div>
-
-            <div style={{ width: "100%", marginTop: "20px" }}>
-
-
-                <Footer />
             </div>
 
         </div>

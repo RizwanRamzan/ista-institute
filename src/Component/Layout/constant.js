@@ -12,7 +12,7 @@ import {
 
 export const FooterTabs = [
   {
-    title: "iSTA Institute",
+    title: "isttaa Institute",
     sub_title: [
       {
         name: "Diploma",
@@ -29,7 +29,7 @@ export const FooterTabs = [
     ],
   },
   {
-    title: "iSTA Solutions",
+    title: "isttaa Solutions",
     sub_title: [
       {
         name: "Graphics & Design",
@@ -47,7 +47,7 @@ export const FooterTabs = [
   },
 
   {
-    title: "iSTA IT Shop",
+    title: "isttaa IT Shop",
     sub_title: [
       {
         name: "Laptop",
@@ -85,29 +85,25 @@ export const FooterTabs = [
 export const SocialIcon = [
   {
     image: Facbook,
+    link :"https://www.facebook.com/isttaainstitute"
   },
-  {
-    image: Whatsapp,
-  },
+
   {
     image: Instagram,
+    link :"https://www.instagram.com/isttaainstitute/"
   },
   {
     image: Twitter,
+    link :"https://twitter.com/isttaainstitute"
   },
   {
     image: Youtube,
+    link :"https://www.youtube.com/channel/UC0Eg--6_siBxju8KmOnp8VQ"
   },
-  {
-    image: Tiktok,
-  },
-  {
-    image: Pinteress,
-  },
+
   {
     image: LinkedIn,
+    link :"https://www.linkedin.com/company/100025900/admin/feed/posts/"
   },
-  {
-    image: Snapchat,
-  },
+
 ];

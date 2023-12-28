@@ -7,7 +7,6 @@ import Footer from '../../Component/Layout/Footer'
 const About = () => {
     return (
         <div className='about-main'>
-            <TopBar button="Join" activeClass="activehome" />
             <div className='about'>
                 <p>About</p>
             </div>
@@ -28,7 +27,6 @@ const About = () => {
 
             {/* Footer */}
 
-            <Footer />
 
         </div>
     )

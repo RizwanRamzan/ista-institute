@@ -7,10 +7,12 @@ import {
   SingleCardsMarketing,
 } from "./constant";
 import Footer from "../../Component/footer";
+import TopBar from "../../Component/Layout/TopBar";
 
 const Marketing = () => {
   return (
     <>
+    
       <Wrapper>
         <h1> Marketing </h1>
       </Wrapper>
@@ -63,8 +65,6 @@ const Marketing = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

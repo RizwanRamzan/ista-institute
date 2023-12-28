@@ -1,13 +1,13 @@
 import React from "react";
 import "./development.scss";
 import Wrapper from "../../common/Wrapper";
-import { Buttons, DoubleCards, SingleCards } from "../Art_and_design/constant";
-import Footer from "../../Component/footer";
+import { Buttons } from "../Art_and_design/constant";
 import { DoubleCardsDevelopment, SingleCardsDevelopment } from "./constant";
 
 const Development = () => {
   return (
     <>
+
       <Wrapper>
         <h1> Development </h1>
       </Wrapper>
@@ -61,7 +61,6 @@ const Development = () => {
         </div>
       </div>
 
-      <Footer />
     </>
   );
 };

@@ -6,7 +6,7 @@ const BenefitsOfIsta = () => {
   return (
     <>
       <div className="benefitsOfIsta">
-        <h1> Benefits Of Learning With iSTA </h1>
+        <h1> Benefits Of Learning With isttaa </h1>
         <div className="benefits_content">
           {BenefitCards.map((el) => (
             <>

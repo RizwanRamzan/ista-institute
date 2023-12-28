@@ -4,22 +4,22 @@ import { Institute } from '../../assets'
 
 const InstituteContainer = ({ item }) => {
     return (
-        <div className={item.name == "iSTA Institute" && 'instituteContainer' || item.name == "iSTA Solutions" && "solutionContainer" || item?.name == "iSTA IT Shop" && "shopContainer"}>
+        <div className={item.name == "isttaa Institute" && 'instituteContainer' || item.name == "isttaa Solutions" && "solutionContainer" || item?.name == "isttaa IT Shop" && "shopContainer"}>
             <div className='instituteHeader'>
                 <div className='instituteSubHeader'>
-                    <p className='istaText '>{item?.name}</p>
+                    <p className='isttaaText '>{item?.name}</p>
                     <p className='explore'>Explore</p>
                 </div>
             </div>
             <div className='institute-text-area' >
                 <div className='institute-left' >
-                    {item?.name == "iSTA Institute" && <p className='institute-text' >
-                        Pakistan’s No.1<br />IT Training Institute
+                    {item?.name == "isttaa Institute" && <p className='institute-text' >
+                        Pakisttaan’s No.1<br />IT Training Institute
                     </p>}
-                    {item?.name == "iSTA Solutions" && <p className='institute-text' >
+                    {item?.name == "isttaa Solutions" && <p className='institute-text' >
                         Unlock the Ideal<br />IT Service, Right Now!
                     </p>}
-                    {item?.name == "iSTA IT Shop" && <p className='institute-text' >
+                    {item?.name == "isttaa IT Shop" && <p className='institute-text' >
                         Your Source for<br />IT Accessories
                     </p>}
                     <div className='buttons'>

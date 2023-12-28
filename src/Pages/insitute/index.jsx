@@ -14,13 +14,15 @@ import Testimonials from "../../Component/testimonials";
 import ExploreBrowser from "../../Component/exploreBrowser";
 import DiscountOffer from "../../Component/discountOffer";
 import TopBar from "../../Component/Layout/TopBar";
+import { useNavigate } from "react-router-dom";
 // import MyFooter from "../../Component/myFooter";
 
 const Insitute = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="main">
-        <TopBar activeClass="activehome" button="Apply now" />
         <div className="insitute_wrapper">
           <div className="insitute">
             <div className="insitute_left">
@@ -29,16 +31,20 @@ const Insitute = () => {
               </h1>
               <p> Services </p>
               <div className="insitute__buttons">
-                <button>Courses</button>
-                <button>Diploma</button>
+                <button onClick={() => navigate("/all-courses")}>
+                  Courses
+                </button>
+                <button onClick={() => navigate("/all-courses")}>
+                  Diploma
+                </button>
               </div>
               <p className="insitute_text">
-                "Welcome to iSTA, Pakistan's Premier IT Training Institute!
+                "Welcome to isttaa, Pakistan's Premier IT Training Institute!
                 Elevate your skills, soar to new heights in technology, and
                 conquer the IT world with our cutting-edge courses. Join our
                 dynamic community of learners, guided by expert instructors, and
                 embrace a future brimming with endless possibilities. Unleash
-                your potential at iSTA!"
+                your potential at isttaa!"
               </p>
             </div>
             <div className="insitute_right">
@@ -48,11 +54,11 @@ const Insitute = () => {
           <NewCareer />
           <h1 className="start_learning_with_ista">
             {" "}
-            Start Learning With iSTA{" "}
+            Start Learning With isttaa{" "}
           </h1>
           <Categories />
           <DiplomaCertification />
-          <DiscountOffer />
+          {/* <DiscountOffer /> */}
           <ZeroToMastery />
           <ExploreBrowser />
           <BenefitsOfIsta />
@@ -62,7 +68,6 @@ const Insitute = () => {
           <Verification />
           {/* <Footer /> */}
         </div>
-        <Footer />
       </div>
     </>
   );

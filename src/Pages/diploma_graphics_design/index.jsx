@@ -25,7 +25,7 @@ const Diploma_Graphics_Design = () => {
             </div>
             <hr />
             <p>
-              The Ista Graphic Design Diploma Offers A Strong Foundation For
+              The isttaa Graphic Design Diploma Offers A Strong Foundation For
               Careers In Client-based Design And Encourages Personal Creative
               Development. The Program Focuses On Teaching Industry-standard
               Visual And Cognitive Skills To Meet The Demands Of The Creative
