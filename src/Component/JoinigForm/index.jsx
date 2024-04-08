@@ -3,19 +3,25 @@ import "../../Pages/Contact/contact.scss";
 import { Col, Form, Input, Row, Select, Spin, message } from "antd";
 import { data } from "./constant";
 import { useForm } from "@formspree/react";
+import { useNavigate } from "react-router-dom";
 
 const JoiningForm = () => {
   const [service, setService] = useState("");
   const [courses, setCourses] = useState([]);
+  const [loading, setLoading] = useState(false);
   const { TextArea } = Input;
+
+  const navigate = useNavigate()
 
   const [babag, handleSubmit] = useForm("meqbzlee");
   const [form] = Form.useForm();
 
   useEffect(() => {
+    console.log(babag,"babag")
     if (babag.succeeded) {
       form.resetFields();
       message.success("Thanks for joining!");
+      navigate("/home")
     }
   }, [babag]);
 
@@ -197,7 +203,7 @@ const JoiningForm = () => {
               </Col>
             </Row>
             <div span={24} className="form-button">
-              <button style={{ background: "#3B7DED" }}>Submit Now</button>
+              <button onClick={()=>setLoading(true)} style={{ background: "#3B7DED" }}>Submit Now</button>
             </div>
           </Form>
         </div>

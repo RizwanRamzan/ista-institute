@@ -25,6 +25,7 @@ import Adobe_Photoshop from "../Pages/Adobe_Photoshop";
 import Diploma_Graphics_Design from "../Pages/diploma_graphics_design";
 import Diploma_Computer_Science from "../Pages/diploma_computer_science";
 import Courses from "../Pages/Courses/courses";
+import CoursesDetails from "../Pages/Courses/coursesDetails";
 
 const ApplicationRoutes = () => {
   function RequireAuth({ children }) {
@@ -60,6 +61,16 @@ const ApplicationRoutes = () => {
           </div>
         }
       />
+
+      <Route
+        path="/course-detail/:id"
+        element={
+          <div className="layout">
+            <CoursesDetails />
+          </div>
+        }
+      />
+
       <Route
         path="/contact"
         element={
@@ -220,7 +231,6 @@ const ApplicationRoutes = () => {
           </div>
         }
       />
-
     </Routes>
   );
 };

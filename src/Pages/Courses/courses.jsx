@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getRequest } from "../../service/apiCalls";
-import { Col, Empty, Row } from "antd";
+import { Col, Divider, Empty, Row } from "antd";
 import CoursesCard from "../../Component/CoursesCard/courses";
 import "./courses.scss";
 
@@ -46,51 +46,61 @@ const Courses = () => {
   ];
 
   const filterData = (elm) => {
-    if(elm == activeBtn){
-      setData(allData)
-      setActiveBtn("")
+    if (elm == activeBtn) {
+      setActiveBtn("");
+      setData(allData);
+      return;
     }
     setActiveBtn(elm);
     const filterCourses = allData?.filter(
       (item) => item?.type?.toLowerCase() == elm?.toLowerCase()
     );
-    setData(filterCourses)
+    setData(filterCourses);
   };
 
   return (
-    <Row style={{width:"100%"}} gutter={20}>
-      <div className="buttons">
-        {Buttons.map((el,index) => (
-          <Col key={index} span={6}>
-            <button onClick={() => filterData(el.button)} className="art_btn">
+    <div className="courses">
+      <div className="main">
+        <Row style={{width:"100%"}} gutter={20}>
+          <div className="buttons">
+            {Buttons.map((el, index) => (
+              <Col key={index} span={6}>
+                <button
+                  onClick={() => filterData(el.button)}
+                  className="art_btn"
+                >
+                  {el.button}{" "}
+                </button>
+                <div
+                  style={
+                    activeBtn == el?.button
+                      ? {
+                          borderBottom: "3px solid #3b7ded",
+                          marginTop: "5px",
+                          borderRadius: "10px",
+                        }
+                      : {}
+                  }
+                ></div>
+              </Col>
+            ))}
+          </div>
+            <Divider/>
 
-              {el.button}{" "}
-            </button>
-            <div
-              style={
-                activeBtn == el?.button
-                  ? {
-                      borderBottom: "3px solid #3b7ded",
-                      marginTop: "5px",
-                      borderRadius: "10px",
-                    }
-                  : {}
-              }
-            ></div>
-          </Col>
-        ))}
+          {data?.length > 0 ? (
+            data?.map((item, index) => (
+              <Col span={6} key={index}>
+                <CoursesCard item={item} />
+              </Col>
+            ))
+          ) : (
+            <Col span={24}>
+            <Empty />
+            </Col>
+          )}
+        </Row>
       </div>
-
-      {data?.length > 0 ? (
-        data?.map((item, index) => (
-          <Col span={6} key={index}>
-            <CoursesCard item={item} />
-          </Col>
-        ))
-      ) : (
-        <Empty />
-      )}
-    </Row>
+    </div>
   );
 };
 

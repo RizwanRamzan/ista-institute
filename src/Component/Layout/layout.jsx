@@ -7,9 +7,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <TopBar button="Join" activeClass="activehome" />
-      <div className="layout">
-        <div className="sub-layout">{children}</div>
-      </div>
+
+      {children}
+
       <Footer />
     </>
   );

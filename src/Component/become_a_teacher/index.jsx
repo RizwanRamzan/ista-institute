@@ -23,7 +23,6 @@ const BecomeATeacher = () => {
                 your students. Embrace this fulfilling profession and make a
                 difference in the lives of future generations.
               </p>
-              <button className="apply_now"> Apply Now </button>
             </div>
           </div>
           <div className="becomeTeacher_content_right">

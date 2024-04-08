@@ -1,6 +1,15 @@
 @import '../../GeneralStyle/mixins.scss';
 @import '../../GeneralStyle/variables.scss';
 
+
+.courses{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .main{
+    width: 90%;
+ 
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -41,3 +50,7 @@
       // }
     }
   }
+
+}
+
+}

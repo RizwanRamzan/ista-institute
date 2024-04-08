@@ -20,25 +20,25 @@ const ExploreBrowser = () => {
               <div className="img">
                 <img src={Explore_office} alt="" />
               </div>
-              <button className="ms-office"> MS Office </button>
+              <button onClick={()=>navigate("/all-courses")}  className="ms-office"> MS Office </button>
             </div>
             <div className="exploreBrowser__content__card">
               <div className="img">
                 <img src={Explore_voice} alt="" />
               </div>
-              <button className="ms-office"> Spoken English </button>
+              <button onClick={()=>navigate("/all-courses")} className="ms-office"> Spoken English </button>
             </div>
             <div className="exploreBrowser__content__card">
               <div className="img">
                 <img src={Explore_Ai} alt="" />
               </div>
-              <button className="ms-office"> Adobe Illustrator </button>
+              <button onClick={()=>navigate("/all-courses")} className="ms-office"> Adobe Illustrator </button>
             </div>
             <div className="exploreBrowser__content__card">
               <div className="img">
                 <img src={Explore_html} alt="" />
               </div>
-              <button className="ms-office"> HTML / CSS </button>
+              <button onClick={()=>navigate("/all-courses")} className="ms-office"> HTML / CSS </button>
             </div>
           </div>
         </div>

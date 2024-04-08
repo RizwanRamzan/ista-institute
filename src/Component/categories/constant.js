@@ -6,20 +6,20 @@ export const Card = [
     icon: category_1,
     courses: "10+ Courses",
     desc: "Basic & Advance Courses",
-    url: "/art-and-design",
+    url: "/all-courses",
   },
   {
     title: "Development",
     icon: category_2,
     courses: "10+ Courses",
     desc: "Basic & Advance Courses",
-    url: "/development",
+    url: "/all-courses",
   },
   {
     title: "Marketing",
     icon: category_3,
     courses: "10+ Courses",
     desc: "Basic & Advance Courses",
-    url: "/marketing",
+    url: "/all-courses",
   },
 ];

@@ -1,8 +1,13 @@
 import React from "react";
 import "./diplomaCertification.scss";
 import { DiplomaCardAPI } from "./constant";
+import { useNavigate } from "react-router-dom";
 
 const DiplomaCertification = () => {
+
+  const navigate = useNavigate();
+
+
   return (
     <>
       <div className="diploma">
@@ -17,7 +22,7 @@ const DiplomaCertification = () => {
                     <p> {el.desc} </p>
                     <h3> {el.title} </h3>
                   </div>
-                  <button className="read_more_btn"> Read More </button>
+                  <button onClick={()=>navigate("/all-courses")} className="read_more_btn"> Read More </button>
                 </div>
               </>
             ))}

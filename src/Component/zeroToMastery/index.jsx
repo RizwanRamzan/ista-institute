@@ -20,7 +20,7 @@ const ZeroToMastery = () => {
                   </div>
                   <button
                     className="all_courses"
-                    onClick={() => navigate(el.url)}
+                    onClick={()=>navigate("/all-courses")}
                   >
                     All Courses
                   </button>
